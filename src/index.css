@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .input-style {
+        @apply w-full rounded-md border border-black bg-lightHover px-4 py-3 text-black focus:outline-none dark:border-white dark:bg-darkHover dark:text-white;
+    }
+
+    .button {
+        @apply block cursor-pointer rounded-md bg-primary px-4 py-3 text-center text-base font-semibold text-white;
+    }
+
+    .section-heading {
+        @apply text-2xl font-semibold;
+    }
+
+    .sidebar-item {
+        @apply flex cursor-pointer items-center gap-3 rounded-lg bg-bgLight px-2 py-2 text-lg text-textLight dark:bg-bgDark dark:text-textDark md:hover:bg-lightHover md:dark:hover:bg-darkHover;
+    }
+}
+
+/* NoteCards CSS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
